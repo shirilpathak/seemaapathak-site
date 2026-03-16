@@ -4,11 +4,13 @@ font-family:'Poppins',sans-serif;
 
 margin:0;
 
-background:#0f0f1a;
+background:linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #16213e 100%);
 
 color:white;
 
-text-align:center;
+line-height:1.6;
+
+overflow-x:hidden;
 
 }
 
