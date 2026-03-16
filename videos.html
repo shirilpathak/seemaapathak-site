@@ -1,21 +1,466 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
-    <title>Videos | Seemaa Pathak</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style.css">
+    <title>Videos & Spiritual Content | Seemaa Pathak - Divine World Creation</title>
+    
+    <meta name="description" content="Explore Seemaa Pathak's spiritual videos on Vedic Astrology, PLR Therapy, Akashic Healing, Numerology, and more. Professional spiritual guidance and cosmic wisdom.">
+    
+    <link rel="stylesheet" href="css/enhanced-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 
 <body>
 
-<h1>YouTube Videos</h1>
+<!-- Professional Header -->
+<header class="header">
 
-<iframe width="560" height="315"
-        src="https://www.youtube.com/embed?listType=user_uploads&list=divineworldcreation12">
-</iframe>
+    <div class="logo">
+        <i class="fas fa-om"></i>
+        Seemaa Pathak
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="videos.html" class="active">Videos</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+<!-- Hero Section -->
+<section class="video-hero">
+
+    <div class="video-hero-content">
+        <h1>Divine Wisdom Through Videos</h1>
+        <p>Explore our collection of spiritual guidance, astrological insights, and healing sessions designed to illuminate your path</p>
+        
+        <div class="video-stats">
+            <div class="stat">
+                <i class="fas fa-play-circle"></i>
+                <span class="stat-number">150+</span>
+                <span class="stat-label">Spiritual Videos</span>
+            </div>
+            <div class="stat">
+                <i class="fas fa-users"></i>
+                <span class="stat-number">50K+</span>
+                <span class="stat-label">Spiritual Seekers</span>
+            </div>
+            <div class="stat">
+                <i class="fas fa-heart"></i>
+                <span class="stat-number">4.9</span>
+                <span class="stat-label">Community Rating</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Video Categories -->
+<section class="video-categories">
+
+    <h2>Explore by Category</h2>
+    
+    <div class="category-grid">
+        <div class="category-card" data-category="vedic-astrology">
+            <div class="category-icon">
+                <i class="fas fa-star"></i>
+            </div>
+            <h3>Vedic Astrology</h3>
+            <p>Planetary wisdom and cosmic guidance</p>
+            <span class="video-count">45 Videos</span>
+        </div>
+        
+        <div class="category-card" data-category="plr-therapy">
+            <div class="category-icon">
+                <i class="fas fa-clock"></i>
+            </div>
+            <h3>PLR Therapy</h3>
+            <p>Past life regression and healing</p>
+            <span class="video-count">32 Videos</span>
+        </div>
+        
+        <div class="category-card" data-category="akashic">
+            <div class="category-icon">
+                <i class="fas fa-book-open"></i>
+            </div>
+            <h3>Akashic Records</h3>
+            <p>Soul records and cosmic knowledge</p>
+            <span class="video-count">28 Videos</span>
+        </div>
+        
+        <div class="category-card" data-category="numerology">
+            <div class="category-icon">
+                <i class="fas fa-hashtag"></i>
+            </div>
+            <h3>Numerology</h3>
+            <p>Power of numbers in your life</p>
+            <span class="video-count">24 Videos</span>
+        </div>
+        
+        <div class="category-card" data-category="tarot">
+            <div class="category-icon">
+                <i class="fas fa-layer-group"></i>
+            </div>
+            <h3>Tarot Reading</h3>
+            <p>Divine guidance through cards</p>
+            <span class="video-count">18 Videos</span>
+        </div>
+        
+        <div class="category-card" data-category="remedies">
+            <div class="category-icon">
+                <i class="fas fa-hands-helping"></i>
+            </div>
+            <h3>Lal Kitab Remedies</h3>
+            <p>Ancient remedies for modern problems</p>
+            <span class="video-count">15 Videos</span>
+        </div>
+    </div>
+
+</section>
+
+<!-- Featured Videos -->
+<section class="featured-videos">
+
+    <div class="section-header">
+        <h2>Featured Spiritual Content</h2>
+        <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">All Videos</button>
+            <button class="filter-btn" data-filter="recent">Recent</button>
+            <button class="filter-btn" data-filter="popular">Popular</button>
+        </div>
+    </div>
+
+    <div class="video-grid" id="videoGrid">
+        
+        <!-- Video Card 1 -->
+        <div class="video-card" data-category="vedic-astrology">
+            <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/mqdefault.jpg" alt="Video thumbnail">
+                <div class="video-overlay">
+                    <i class="fas fa-play"></i>
+                    <span class="video-duration">12:45</span>
+                </div>
+            </div>
+            <div class="video-info">
+                <h3>Saturn Transit 2026: Complete Guide</h3>
+                <p>Understanding Saturn's movement through zodiac signs and its impact on your life</p>
+                <div class="video-meta">
+                    <span class="views"><i class="fas fa-eye"></i> 15.2K views</span>
+                    <span class="date"><i class="fas fa-calendar"></i> 2 days ago</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Card 2 -->
+        <div class="video-card" data-category="plr-therapy">
+            <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/mqdefault.jpg" alt="Video thumbnail">
+                <div class="video-overlay">
+                    <i class="fas fa-play"></i>
+                    <span class="video-duration">18:30</span>
+                </div>
+            </div>
+            <div class="video-info">
+                <h3>Past Life Regression: Healing Session</h3>
+                <p>Experience deep healing through past life exploration and karmic release</p>
+                <div class="video-meta">
+                    <span class="views"><i class="fas fa-eye"></i> 8.7K views</span>
+                    <span class="date"><i class="fas fa-calendar"></i> 1 week ago</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Card 3 -->
+        <div class="video-card" data-category="akashic">
+            <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/mqdefault.jpg" alt="Video thumbnail">
+                <div class="video-overlay">
+                    <i class="fas fa-play"></i>
+                    <span class="video-duration">25:15</span>
+                </div>
+            </div>
+            <div class="video-info">
+                <h3>Akashic Records: Soul Journey</h3>
+                <p>Access your soul's records and understand your divine purpose</p>
+                <div class="video-meta">
+                    <span class="views"><i class="fas fa-eye"></i> 12.3K views</span>
+                    <span class="date"><i class="fas fa-calendar"></i> 2 weeks ago</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Card 4 -->
+        <div class="video-card" data-category="numerology">
+            <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/mqdefault.jpg" alt="Video thumbnail">
+                <div class="video-overlay">
+                    <i class="fas fa-play"></i>
+                    <span class="video-duration">15:20</span>
+                </div>
+            </div>
+            <div class="video-info">
+                <h3>Life Path Number 2026: Complete Analysis</h3>
+                <p>Discover your life path number and its significance in the coming year</p>
+                <div class="video-meta">
+                    <span class="views"><i class="fas fa-eye"></i> 9.8K views</span>
+                    <span class="date"><i class="fas fa-calendar"></i> 5 days ago</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Card 5 -->
+        <div class="video-card" data-category="tarot">
+            <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/mqdefault.jpg" alt="Video thumbnail">
+                <div class="video-overlay">
+                    <i class="fas fa-play"></i>
+                    <span class="video-duration">22:10</span>
+                </div>
+            </div>
+            <div class="video-info">
+                <h3>Tarot Reading: March 2026 Predictions</h3>
+                <p>Monthly tarot guidance for all zodiac signs with divine insights</p>
+                <div class="video-meta">
+                    <span class="views"><i class="fas fa-eye"></i> 18.5K views</span>
+                    <span class="date"><i class="fas fa-calendar"></i> 1 week ago</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Card 6 -->
+        <div class="video-card" data-category="remedies">
+            <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/mqdefault.jpg" alt="Video thumbnail">
+                <div class="video-overlay">
+                    <i class="fas fa-play"></i>
+                    <span class="video-duration">19:45</span>
+                </div>
+            </div>
+            <div class="video-info">
+                <h3>Lal Kitab: Saturn Shanti Remedies</h3>
+                <p>Powerful remedies to pacify Saturn and remove obstacles</p>
+                <div class="video-meta">
+                    <span class="views"><i class="fas fa-eye"></i> 11.2K views</span>
+                    <span class="date"><i class="fas fa-calendar"></i> 4 days ago</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="load-more-container">
+        <button class="btn secondary" id="loadMoreBtn">
+            <i class="fas fa-plus"></i> Load More Videos
+        </button>
+    </div>
+
+</section>
+
+<!-- Consultation CTA Section -->
+<section class="consultation-cta">
+
+    <div class="cta-content">
+        <div class="cta-text">
+            <h2>Need Personalized Guidance?</h2>
+            <p>Book a one-on-one consultation with Seemaa Pathak for detailed astrological analysis and spiritual healing tailored to your specific needs.</p>
+            
+            <div class="cta-features">
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>45-minute detailed session</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Birth chart analysis included</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Personalized remedies provided</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Follow-up support available</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cta-buttons">
+            <a href="contact.html" class="btn primary">
+                <i class="fas fa-calendar-check"></i> Book Consultation
+            </a>
+            <a href="https://youtube.com/@DivineWORLDCreation12" target="_blank" class="btn secondary">
+                <i class="fas fa-youtube"></i> Subscribe on YouTube
+            </a>
+        </div>
+    </div>
+
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+
+    <h2>What Spiritual Seekers Say</h2>
+    
+    <div class="testimonial-grid">
+        <div class="testimonial-card">
+            <div class="testimonial-content">
+                <p>"Seemaa's PLR therapy session was life-changing. I discovered patterns from past lives that explained so much about my current challenges."</p>
+            </div>
+            <div class="testimonial-author">
+                <div class="author-info">
+                    <h4>Priya Sharma</h4>
+                    <span>Software Engineer, Mumbai</span>
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="testimonial-content">
+                <p>"The Vedic astrology consultation was incredibly accurate. Seemaa's guidance helped me make important career decisions with confidence."</p>
+            </div>
+            <div class="testimonial-author">
+                <div class="author-info">
+                    <h4>Rahul Verma</h4>
+                    <span>Business Owner, Delhi</span>
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="testimonial-content">
+                <p>"The Akashic record reading provided profound insights into my soul's purpose. I feel more aligned and peaceful than ever before."</p>
+            </div>
+            <div class="testimonial-author">
+                <div class="author-info">
+                    <h4>Anjali Patel</h4>
+                    <span>Teacher, Pune</span>
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Connect With Us</h3>
+            <div class="social-links">
+                <a href="https://youtube.com/@DivineWORLDCreation12" target="_blank" class="social-link">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://instagram.com/seemaa_pathak" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:contact@seemaapathak.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <div class="footer-links">
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="videos.html">Videos</a>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Divine World Creation</h3>
+            <p>Guiding souls through ancient wisdom and modern understanding for a harmonious life journey.</p>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2026 Seemaa Pathak - Divine World Creation. All rights reserved.</p>
+    </div>
+
+</footer>
+
+<script>
+// Video filtering functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const videoCards = document.querySelectorAll('.video-card');
+    
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Remove active class from all buttons
+            filterBtns.forEach(b => b.classList.remove('active'));
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            const filter = this.dataset.filter;
+            
+            videoCards.forEach(card => {
+                if (filter === 'all') {
+                    card.style.display = 'block';
+                } else {
+                    // Add filtering logic here
+                    card.style.display = 'block';
+                }
+            });
+        });
+    });
+    
+    // Category card clicks
+    const categoryCards = document.querySelectorAll('.category-card');
+    categoryCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const category = this.dataset.category;
+            // Filter videos by category
+            console.log('Filtering by category:', category);
+        });
+    });
+    
+    // Load more functionality
+    document.getElementById('loadMoreBtn').addEventListener('click', function() {
+        this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
+        
+        // Simulate loading more videos
+        setTimeout(() => {
+            this.innerHTML = '<i class="fas fa-plus"></i> Load More Videos';
+            // Add more video cards here
+        }, 1500);
+    });
+});
+</script>
 
 </body>
 
