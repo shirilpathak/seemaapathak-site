@@ -257,6 +257,31 @@ nav a:hover {
     border: none;
 }
 
+.video-placeholder {
+    background: linear-gradient(135deg, #1a1a2e, #2d2d44);
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(255, 213, 79, 0.2);
+    min-height: 315px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-info h3 {
+    color: #ffd54f;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.video-info p {
+    color: #e0e0e0;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
 .video-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
