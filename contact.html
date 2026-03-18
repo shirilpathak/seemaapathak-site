@@ -1,25 +1,409 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
-    <title>Contact | Seemaa Pathak</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style.css">
+    <title>Contact | Seemaa Pathak - Divine World Creation</title>
+    <meta name="description" content="Contact Seemaa Pathak for Vedic astrology consultations. Book appointments, ask questions, or get spiritual guidance. Call +91 90000 00000 or email contact@seemaapathak.com">
+
+    <link rel="stylesheet" href="css/enhanced-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 </head>
 
 <body>
 
-<h1>Contact</h1>
+<!-- Professional Header -->
+<header class="header">
 
-<p>Phone: +91 90000 00000</p>
+    <div class="header-top">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> +91 90000 00000</span>
+                <span><i class="fas fa-envelope"></i> contact@seemaapathak.com</span>
+            </div>
+            <div class="social-links">
+                <a href="https://www.youtube.com/@DivineWORLDCreation12" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://instagram.com/seemaa_pathak" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
 
-<p>WhatsApp: +91 90000 00000</p>
+    <div class="header-main">
+        <div class="container">
+            <div class="logo">
+                <h2>Seemaa Pathak</h2>
+                <span>Divine World Creation</span>
+            </div>
 
-<p>Email: contact@seemaapathak.com</p>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="services.html">Consultation</a>
+                <a href="case-studies.html">Case Studies</a>
+                <a href="videos.html">Videos</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
 
-<p>Location: Bhusawal, Maharashtra</p>
+            <div class="header-cta">
+                <a href="tel:+91900000000" class="btn urgent">Urgent Consultation</a>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<!-- Contact Hero -->
+<section class="contact-hero">
+
+    <div class="container">
+        <div class="hero-content">
+            <h1>Get in Touch</h1>
+            <h2>Begin Your Spiritual Journey Today</h2>
+            <p>Whether you need guidance, have questions, or want to book a consultation, I'm here to help you find clarity and healing through ancient wisdom</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- Contact Options -->
+<section class="contact-options">
+
+    <div class="container">
+        <h2>Choose Your Preferred Contact Method</h2>
+        <p>Multiple convenient ways to connect with me for spiritual guidance</p>
+        
+        <div class="contact-grid">
+            <div class="contact-card urgent">
+                <div class="card-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h3>Urgent Consultation</h3>
+                <p>Immediate guidance for urgent matters and emergency situations</p>
+                <div class="contact-info">
+                    <strong>Phone:</strong> +91 90000 00000<br>
+                    <strong>Available:</strong> 24/7 for emergencies
+                </div>
+                <a href="tel:+91900000000" class="btn primary">Call Now</a>
+            </div>
+            
+            <div class="contact-card">
+                <div class="card-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h3>Schedule Consultation</h3>
+                <p>Book a detailed consultation for comprehensive guidance</p>
+                <div class="contact-info">
+                    <strong>Email:</strong> contact@seemaapathak.com<br>
+                    <strong>Response:</strong> Within 24 hours
+                </div>
+                <a href="#booking-form" class="btn secondary">Book Now</a>
+            </div>
+            
+            <div class="contact-card">
+                <div class="card-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <h3>WhatsApp Support</h3>
+                <p>Quick questions and follow-up consultations</p>
+                <div class="contact-info">
+                    <strong>WhatsApp:</strong> +91 90000 00000<br>
+                    <strong>Available:</strong> 9 AM - 9 PM
+                </div>
+                <a href="https://wa.me/91900000000" target="_blank" class="btn secondary">Chat on WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Booking Form -->
+<section class="booking-form" id="booking-form">
+
+    <div class="container">
+        <div class="form-grid">
+            <div class="form-content">
+                <h2>Book Your Consultation</h2>
+                <p>Fill out the form below to schedule your personalized astrology consultation</p>
+                
+                <div class="form-features">
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Confidential & Secure</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Response within 24 hours</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Flexible scheduling options</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Available in Hindi & English</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-container">
+                <form class="consultation-form" onsubmit="handleBookingSubmit(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+91 XXXXX XXXXX">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Consultation Type *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select consultation type</option>
+                                <option value="career">Career & Business Consultation</option>
+                                <option value="relationship">Relationship & Marriage</option>
+                                <option value="health">Health & Wellness</option>
+                                <option value="spiritual">Spiritual Healing</option>
+                                <option value="numerology">Numerology & Remedies</option>
+                                <option value="urgent">Urgent Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="birthdate">Date of Birth *</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="time">Preferred Time *</label>
+                        <select id="time" name="time" required>
+                            <option value="">Select preferred time</option>
+                            <option value="morning">Morning (9 AM - 12 PM)</option>
+                            <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
+                            <option value="evening">Evening (4 PM - 8 PM)</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Concerns *</label>
+                        <textarea id="message" name="message" rows="4" required placeholder="Please describe your concerns or what you'd like guidance on..."></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <span>I agree to be contacted for consultation scheduling and understand that my information will be kept confidential</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn primary full-width">
+                        <i class="fas fa-calendar-check"></i> Book Consultation
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Office Information -->
+<section class="office-info">
+
+    <div class="container">
+        <h2>Visit Our Office</h2>
+        <p>For in-person consultations, visit our peaceful and spiritual environment in Bhusawal</p>
+        
+        <div class="office-grid">
+            <div class="office-details">
+                <div class="detail-item">
+                    <div class="detail-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="detail-content">
+                        <h3>Location</h3>
+                        <p>Bhusawal, Maharashtra, India<br>
+                        (Exact address provided upon booking)</p>
+                    </div>
+                </div>
+                
+                <div class="detail-item">
+                    <div class="detail-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="detail-content">
+                        <h3>Office Hours</h3>
+                        <p>Monday - Saturday: 9 AM - 8 PM<br>
+                        Sunday: 10 AM - 6 PM<br>
+                        <strong>Emergency: Available 24/7</strong></p>
+                    </div>
+                </div>
+                
+                <div class="detail-item">
+                    <div class="detail-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <div class="detail-content">
+                        <h3>Languages</h3>
+                        <p>Hindi, English, Marathi<br>
+                        Consultations available in all three languages</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="office-map">
+                <div class="map-placeholder">
+                    <i class="fas fa-map"></i>
+                    <p>Map Location</p>
+                    <small>Exact location shared after booking</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- FAQ Section -->
+<section class="contact-faq">
+
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <h3>How long does a consultation take?</h3>
+                <p>Standard consultations are 45-60 minutes. Urgent consultations are 30 minutes. Spiritual healing sessions may take 60-90 minutes.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>What information do I need to provide?</h3>
+                <p>You'll need your exact date, time, and place of birth for accurate astrology readings. For other consultations, just bring your specific concerns.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Are consultations confidential?</h3>
+                <p>Absolutely! All consultations are 100% confidential. Your personal information and discussion details are never shared with anyone.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>What if I need to reschedule?</h3>
+                <p>You can reschedule or cancel up to 24 hours before your appointment. Emergency rescheduling is available for urgent situations.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Do you offer online consultations?</h3>
+                <p>Yes! I offer consultations via Zoom, WhatsApp video, and phone calls for clients worldwide.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>What payment methods do you accept?</h3>
+                <p>We accept bank transfers, UPI, Paytm, Google Pay, and other digital payment methods. Payment details are shared after booking confirmation.</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- CTA Section -->
+<section class="contact-cta">
+
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to Transform Your Life?</h2>
+            <p>Take the first step towards clarity, healing, and spiritual growth with expert guidance</p>
+            <div class="cta-buttons">
+                <a href="tel:+91900000000" class="btn primary urgent">Call Now: +91 90000 00000</a>
+                <a href="#booking-form" class="btn secondary">Book Online</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Connect With Us</h3>
+            <div class="social-links">
+                <a href="https://youtube.com/@DivineWORLDCreation12" target="_blank" class="social-link">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://instagram.com/seemaa_pathak" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:contact@seemaapathak.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="case-studies.html">Case Studies</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Divine World Creation</h3>
+            <p>Your gateway to spiritual wisdom, cosmic guidance, and transformative healing through ancient Vedic sciences.</p>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2026 Seemaa Pathak - Divine World Creation. All rights reserved.</p>
+    </div>
+
+</footer>
+
+<script>
+function handleBookingSubmit(event) {
+    event.preventDefault();
+    
+    const form = event.target;
+    const formData = new FormData(form);
+    
+    // Show success message
+    const button = form.querySelector('button[type="submit"]');
+    const originalText = button.innerHTML;
+    button.innerHTML = '<i class="fas fa-check"></i> Booking Request Submitted!';
+    button.style.background = '#27ae60';
+    button.disabled = true;
+    
+    // Reset form after 5 seconds
+    setTimeout(() => {
+        form.reset();
+        button.innerHTML = originalText;
+        button.style.background = '';
+        button.disabled = false;
+    }, 5000);
+    
+    // Here you would normally send the data to your server
+    console.log('Booking request:', Object.fromEntries(formData));
+    
+    // Show confirmation message
+    alert('Thank you for your booking request! I will contact you within 24 hours to confirm your appointment.');
+}
+</script>
 
 </body>
 
