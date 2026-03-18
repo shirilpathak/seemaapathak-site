@@ -489,6 +489,49 @@ body {
     opacity: 0.9;
 }
 
+/* YouTube Channel Section */
+.youtube-channel {
+    padding: 80px 0;
+    background: white;
+}
+
+.youtube-channel h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.youtube-channel > .container > p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.youtube-embed {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+}
+
+.youtube-embed iframe {
+    border-radius: 8px;
+    width: 100%;
+}
+
+.channel-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 /* About Section */
 .about {
     padding: 80px 0;
@@ -1324,6 +1367,230 @@ nav a.active {
     
     .filter-tabs {
         justify-content: center;
-        flex-wrap: wrap;
+    }
+}
+
+/* 404 Error Page Styles */
+.error-404 {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    min-height: 60vh;
+}
+
+.error-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.error-icon {
+    font-size: 5rem;
+    color: #ffd54f;
+    margin-bottom: 30px;
+}
+
+.error-404 h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.error-404 h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+.error-message {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.error-details {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.error-details strong {
+    color: #ffd54f;
+}
+
+.error-actions h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #ffd54f;
+}
+
+.action-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.action-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.action-item:hover {
+    transform: translateY(-5px);
+}
+
+.action-item i {
+    font-size: 2.5rem;
+    color: #ffd54f;
+    margin-bottom: 15px;
+}
+
+.action-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.action-item p {
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.action-item .btn {
+    margin-top: 10px;
+}
+
+.spiritual-message {
+    font-style: italic;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border-left: 3px solid #ffd54f;
+}
+
+/* Quick Contact Section */
+.quick-contact {
+    padding: 80px 0;
+    background: white;
+}
+
+.quick-contact h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.quick-contact > .container > p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 40px;
+}
+
+.contact-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.contact-card {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #2c3e50;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-color: #3498db;
+}
+
+.contact-card.urgent {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+}
+
+.contact-card i {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.contact-card.urgent i {
+    color: white;
+}
+
+.contact-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    margin-bottom: 0;
+    opacity: 0.8;
+}
+
+.contact-card.urgent p {
+    opacity: 0.9;
+}
+
+/* Responsive Design for 404 Page */
+@media (max-width: 768px) {
+    .error-404 {
+        padding: 60px 0;
+    }
+    
+    .error-404 h1 {
+        font-size: 3rem;
+    }
+    
+    .error-404 h2 {
+        font-size: 1.5rem;
+    }
+    
+    .action-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-options {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .error-404 {
+        padding: 40px 0;
+    }
+    
+    .error-404 h1 {
+        font-size: 2.5rem;
+    }
+    
+    .error-icon {
+        font-size: 4rem;
+    }
+    
+    .quick-contact {
+        padding: 60px 0;
     }
 }
