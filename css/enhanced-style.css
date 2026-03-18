@@ -1739,3 +1739,494 @@ nav a.active {
         padding: 60px 0;
     }
 }
+
+/* Awards Page Styles */
+.awards-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 120px 0;
+    text-align: center;
+}
+
+.awards-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.awards-hero h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+.awards-hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+/* Awards Statistics */
+.awards-stats {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.stat-item {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+}
+
+.stat-item i {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+/* Awards Gallery */
+.awards-gallery {
+    padding: 80px 0;
+    background: white;
+}
+
+.awards-gallery h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.awards-gallery > .container > p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+}
+
+.award-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    border: 1px solid #ecf0f1;
+}
+
+.award-card:hover {
+    transform: translateY(-10px);
+}
+
+.award-image {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.award-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.award-card:hover .award-image img {
+    transform: scale(1.05);
+}
+
+.award-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(52, 152, 219, 0.9), rgba(41, 128, 185, 0.8));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.award-card:hover .award-overlay {
+    opacity: 1;
+}
+
+.award-overlay i {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.award-content {
+    padding: 30px;
+}
+
+.award-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.award-content p {
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.award-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid #ecf0f1;
+}
+
+.award-year {
+    background: #3498db;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.award-organization {
+    color: #95a5a6;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Awards Testimonials */
+.awards-testimonials {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.awards-testimonials h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.awards-testimonials > .container > p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 50px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.testimonial-content {
+    font-style: italic;
+    color: #7f8c8d;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.testimonial-author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial-author h4 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.testimonial-author span {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.rating {
+    color: #ffd54f;
+}
+
+/* Awards CTA */
+.awards-cta {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Responsive Design for Awards Page */
+@media (max-width: 768px) {
+    .awards-hero {
+        padding: 80px 0;
+    }
+    
+    .awards-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .awards-hero h2 {
+        font-size: 1.5rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+    }
+    
+    .awards-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .awards-hero {
+        padding: 60px 0;
+    }
+    
+    .awards-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .awards-gallery, .awards-testimonials, .awards-cta {
+        padding: 60px 0;
+    }
+    
+    .award-details {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .award-image {
+        height: 200px;
+    }
+}
+
+/* Mail Snippet Section */
+.mail-snippet {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+}
+
+.mail-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.mail-info h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffd54f;
+}
+
+.mail-info p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.tagline-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.tagline-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border-left: 3px solid #ffd54f;
+}
+
+.tagline-item i {
+    font-size: 1.5rem;
+    color: #ffd54f;
+}
+
+.tagline-item span {
+    font-style: italic;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.mail-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mail-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: #ffd54f;
+    text-align: center;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #ffd54f;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.form-group select {
+    cursor: pointer;
+}
+
+.form-group select option {
+    background: #2c3e50;
+    color: white;
+}
+
+.form-note {
+    text-align: center;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+/* Responsive Design for Mail Snippet */
+@media (max-width: 768px) {
+    .mail-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .tagline-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .mail-form {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mail-snippet {
+        padding: 60px 0;
+    }
+    
+    .mail-info h2 {
+        font-size: 1.5rem;
+    }
+    
+    .tagline-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
