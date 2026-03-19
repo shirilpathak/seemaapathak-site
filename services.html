@@ -306,6 +306,65 @@
 
 </section>
 
+<!-- Payment Options Section -->
+<section class="payment-options">
+
+    <div class="container">
+        <h2>Easy Payment Methods</h2>
+        <p>Book your consultation with instant secure payment via trusted providers</p>
+        
+        <div class="payment-grid">
+            <div class="payment-card">
+                <div class="payment-logo">
+                    <strong>Razorpay</strong>
+                    <small>Recommended for India</small>
+                </div>
+                <div class="payment-features">
+                    <p><strong>Supported Methods:</strong></p>
+                    <ul>
+                        <li>✓ UPI (Google Pay, PhonePe, etc.)</li>
+                        <li>✓ Credit/Debit Cards</li>
+                        <li>✓ Net Banking</li>
+                        <li>✓ Wallets (Paytm, Amazon Pay)</li>
+                    </ul>
+                </div>
+                <div class="payment-info">
+                    <p>Pay ₹2,100 - ₹2,500<br><strong>Instant booking confirmation</strong></p>
+                </div>
+                <a href="#" onclick="openPaymentModal('razorpay')" class="btn primary">Pay Now via Razorpay</a>
+                <small class="payment-note">Secure. Fast. Most popular in India.</small>
+            </div>
+            
+            <div class="payment-card">
+                <div class="payment-logo">
+                    <strong>Stripe</strong>
+                    <small>International</small>
+                </div>
+                <div class="payment-features">
+                    <p><strong>Supported Methods:</strong></p>
+                    <ul>
+                        <li>✓ Credit/Debit Cards</li>
+                        <li>✓ Apple Pay</li>
+                        <li>✓ Google Pay</li>
+                        <li>✓ ACH Bank Transfer</li>
+                    </ul>
+                </div>
+                <div class="payment-info">
+                    <p>Pay in USD / Multiple currencies<br><strong>Instant booking confirmation</strong></p>
+                </div>
+                <a href="#" onclick="openPaymentModal('stripe')" class="btn secondary">Pay Now via Stripe</a>
+                <small class="payment-note">Best for international clients.</small>
+            </div>
+        </div>
+
+        <div class="payment-help">
+            <h3>Need Help?</h3>
+            <p>Contact us via <a href="tel:+91900000000">+91 90000 00000</a> (WhatsApp available) or <a href="mailto:contact@seemaapathak.com">email</a> if you need assistance with payment.</p>
+        </div>
+    </div>
+
+</section>
+
 <!-- CTA Section -->
 <section class="services-cta">
 
@@ -363,6 +422,23 @@
     </div>
 
 </footer>
+
+<script>
+// Payment Modal Handler - connects to your Razorpay/Stripe Payment Links
+function openPaymentModal(provider) {
+    // TODO: Replace with your actual payment link URLs from Razorpay/Stripe dashboard
+    const paymentLinks = {
+        razorpay: 'https://rzp.io/l/YOUR_RAZORPAY_PAYMENT_LINK_ID',  // Get this from Razorpay dashboard
+        stripe: 'https://buy.stripe.com/test/YOUR_STRIPE_PAYMENT_LINK_ID'  // Get this from Stripe dashboard
+    };
+    
+    if (paymentLinks[provider]) {
+        window.location.href = paymentLinks[provider];
+    } else {
+        alert('Payment link not configured yet. Please contact us at contact@seemaapathak.com');
+    }
+}
+</script>
 
 </body>
 

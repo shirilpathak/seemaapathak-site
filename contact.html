@@ -306,6 +306,50 @@
 
 </section>
 
+<!-- Payment Options Section -->
+<section class="payment-section">
+
+    <div class="container">
+        <h2>Direct Payment Options</h2>
+        <p>Book and pay instantly to secure your consultation slot</p>
+        
+        <div class="payment-methods-grid">
+            <div class="payment-method">
+                <h3>💳 Razorpay (Recommended)</h3>
+                <p class="payment-desc">UPI, Cards, Net Banking, Wallets - all with instant confirmation</p>
+                <ul class="payment-list">
+                    <li>₹1,500 - 30 mins (Numerology & Remedies)</li>
+                    <li>₹2,100 - 45 mins (Career, Relationship, Health, etc.)</li>
+                    <li>₹2,500 - 60 mins (Spiritual Healing)</li>
+                </ul>
+                <a href="#" onclick="openPaymentModal('razorpay')" class="btn primary">Pay via Razorpay</a>
+            </div>
+            
+            <div class="payment-method">
+                <h3>💳 Stripe</h3>
+                <p class="payment-desc">International payments. Works worldwide with cards & digital wallets.</p>
+                <ul class="payment-list">
+                    <li>USD $18 - 30 mins</li>
+                    <li>USD $25 - 45 mins</li>
+                    <li>USD $30 - 60 mins</li>
+                </ul>
+                <a href="#" onclick="openPaymentModal('stripe')" class="btn secondary">Pay via Stripe</a>
+            </div>
+        </div>
+
+        <div class="payment-info-box">
+            <h3>What Happens After Payment?</h3>
+            <ol class="payment-steps">
+                <li><strong>Instant Confirmation Email</strong> - Receipt + booking details sent to your email</li>
+                <li><strong>Schedule Consultation</strong> - We'll contact you within 24 hours to confirm time slot</li>
+                <li><strong>Get Consultation</strong> - Join via Zoom, WhatsApp, or phone at scheduled time</li>
+                <li><strong>Post-Consultation Support</strong> - Questions? We're here to help!</li>
+            </ol>
+        </div>
+    </div>
+
+</section>
+
 <!-- CTA Section -->
 <section class="contact-cta">
 
@@ -391,6 +435,21 @@ function handleBookingSubmit(event) {
     
     // Show confirmation message
     alert('Thank you for your booking request! I will contact you within 24 hours to confirm your appointment.');
+}
+
+// Payment Modal Handler - connects to your Razorpay/Stripe Payment Links
+function openPaymentModal(provider) {
+    // TODO: Replace with your actual payment link URLs from Razorpay/Stripe dashboard
+    const paymentLinks = {
+        razorpay: 'https://rzp.io/l/YOUR_RAZORPAY_PAYMENT_LINK_ID',  // Get this from Razorpay dashboard
+        stripe: 'https://buy.stripe.com/test/YOUR_STRIPE_PAYMENT_LINK_ID'  // Get this from Stripe dashboard
+    };
+    
+    if (paymentLinks[provider]) {
+        window.location.href = paymentLinks[provider];
+    } else {
+        alert('Payment link not configured yet. Please contact us at contact@seemaapathak.com');
+    }
 }
 </script>
 
