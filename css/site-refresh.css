@@ -201,6 +201,30 @@ section { scroll-margin-top: 96px; }
   color: var(--white);
   padding: clamp(48px,7vw,78px) 0;
 }
+
+.instagram-reels { padding-top: 0; }
+.instagram-reels-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 38px 44px;
+    border-radius: 20px;
+    color: #fff;
+    background: linear-gradient(120deg, #5b254f, #a0336c 52%, #e66e55);
+    box-shadow: 0 16px 34px rgba(91, 37, 79, .18);
+}
+.instagram-reels-card .eyebrow { color: #f8d7a8; }
+.instagram-reels-card h2 { margin: 0 0 10px; color: #fff; }
+.instagram-reels-card p { margin: 0; color: rgba(255, 255, 255, .9); }
+.instagram-reels-card .btn { flex: 0 0 auto; background: #fff; color: #5b254f; }
+.instagram-reels-card .btn:hover { background: #f8e8cb; }
+.instagram-reels-card .btn i { margin-right: 7px; }
+
+@media (max-width: 700px) {
+    .instagram-reels-card { display: block; padding: 30px 25px; }
+    .instagram-reels-card .btn { margin-top: 22px; }
+}
 .home-cta h2 { color: var(--white); max-width: 690px; margin: 0 auto 14px; }
 .home-cta p { color: rgba(255,255,255,.85); margin: 0 auto 26px; max-width: 620px; }
 .home-cta .btn.primary { color: var(--forest); background: var(--white); border-color: var(--white); }
