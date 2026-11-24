@@ -320,6 +320,44 @@ section { scroll-margin-top: 96px; }
 }
 :is(.awards-cta,.consultation-cta,.services-cta,.contact-cta) :is(h1,h2,h3,p,span) { color: var(--white); }
 :is(.awards-cta,.consultation-cta,.services-cta,.contact-cta) .btn.primary { color: var(--forest); background: var(--white); }
+
+/* Video page uses its own hero wrapper instead of the standard .container. */
+.video-hero .video-hero-content {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+  text-align: left;
+}
+.video-hero .video-hero-content h1 {
+  color: var(--ink);
+  -webkit-text-fill-color: currentColor;
+  background: none;
+  font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+  line-height: 1.1;
+  margin: 0 0 15px;
+}
+.video-hero .video-hero-content p {
+  color: var(--muted);
+  max-width: 700px;
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+/* Keep the consultation CTA feature rows readable against its dark background. */
+.consultation-cta .feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  color: var(--white);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: left;
+}
+.consultation-cta .feature span { color: var(--white); }
+.consultation-cta .feature i { color: #f0d59e; margin: 0; font-size: 1rem; }
 .awards-stats, .case-stats, .stats-grid { background: var(--sage); }
 .stat-number { font-weight: 700; }
 .credit-card, .award-card { overflow: hidden; }
