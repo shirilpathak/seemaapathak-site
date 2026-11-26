@@ -394,6 +394,23 @@ section { scroll-margin-top: 96px; }
 .awards-stats, .case-stats, .stats-grid { background: var(--sage); }
 .stat-number { font-weight: 700; }
 .credit-card, .award-card { overflow: hidden; }
+.recognition-feature {
+  display: grid;
+  grid-template-columns: minmax(260px, .72fr) minmax(0, 1fr);
+  align-items: stretch;
+  max-width: 900px;
+  margin: 34px auto 44px;
+  overflow: hidden;
+  background: var(--sage);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgba(36,52,45,.08);
+}
+.recognition-feature img { width: 100%; height: 100%; min-height: 330px; object-fit: cover; object-position: center; }
+.recognition-feature figcaption { display: flex; flex-direction: column; justify-content: center; padding: 40px; }
+.recognition-feature h3 { margin: 0 0 12px; color: var(--forest); font-size: clamp(1.45rem,2.3vw,2rem); }
+.recognition-feature p { color: var(--muted); margin: 0; }
+.recognition-feature .eyebrow { color: var(--terracotta); margin: 0 0 10px; }
 .credit-image, .award-image { background: var(--sand); }
 .credit-image img, .award-image img { object-fit: cover; }
 .credit-content h3, .award-content h3 { color: var(--forest); }
@@ -462,6 +479,7 @@ footer {
   .service-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .featured-recognition { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .guidance-promo-grid { grid-template-columns: 1fr; max-width: 520px; }
+  .recognition-feature { max-width: 620px; }
 }
 @media (max-width: 620px) {
   .container { padding-left: 20px; padding-right: 20px; }
@@ -485,6 +503,9 @@ footer {
   .guidance-promo-card { grid-template-columns: 130px 1fr; }
   .guidance-promo-card img { min-height: 220px; }
   .guidance-promo-copy { padding: 22px; }
+  .recognition-feature { grid-template-columns: 1fr; }
+  .recognition-feature img { min-height: 0; max-height: 500px; }
+  .recognition-feature figcaption { padding: 28px; }
   .home-service-card { min-height: 0; }
   .hero-actions { flex-direction: column; align-items: stretch; }
   .hero-actions .btn { text-align: center; }
