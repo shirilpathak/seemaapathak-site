@@ -190,6 +190,39 @@ section { scroll-margin-top: 96px; }
 .featured-recognition {
   display: grid; grid-template-columns: repeat(3,1fr); gap: 18px;
 }
+
+.guidance-promo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+.guidance-promo-card {
+  display: grid;
+  grid-template-columns: minmax(180px, .8fr) minmax(0, 1fr);
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 7px 24px rgba(36,52,45,.08);
+}
+.guidance-promo-card img {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  object-fit: cover;
+}
+.guidance-promo-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 28px;
+}
+.guidance-promo-copy h3 { color: var(--forest); margin: 0 0 11px; }
+.guidance-promo-copy p { color: var(--muted); margin: 0 0 20px; }
+.text-link { color: var(--forest); font-weight: 700; text-decoration: none; }
+.text-link:hover { text-decoration: underline; }
 .recognition-card {
   overflow: hidden; background: var(--white); border: 1px solid var(--line);
   border-radius: var(--radius); box-shadow: 0 4px 18px rgba(36,52,45,.035);
@@ -428,6 +461,7 @@ footer {
   .hero-layout { grid-template-columns: 1fr 0.8fr; gap: 32px; }
   .service-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .featured-recognition { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .guidance-promo-grid { grid-template-columns: 1fr; max-width: 520px; }
 }
 @media (max-width: 620px) {
   .container { padding-left: 20px; padding-right: 20px; }
@@ -448,6 +482,9 @@ footer {
   .trust-item + .trust-item { border-left: 0; border-top: 1px solid var(--line); }
   .steps-grid, .featured-recognition { grid-template-columns: 1fr; }
   .service-grid { grid-template-columns: 1fr; }
+  .guidance-promo-card { grid-template-columns: 130px 1fr; }
+  .guidance-promo-card img { min-height: 220px; }
+  .guidance-promo-copy { padding: 22px; }
   .home-service-card { min-height: 0; }
   .hero-actions { flex-direction: column; align-items: stretch; }
   .hero-actions .btn { text-align: center; }
