@@ -411,6 +411,37 @@ section { scroll-margin-top: 96px; }
 .recognition-feature h3 { margin: 0 0 12px; color: var(--forest); font-size: clamp(1.45rem,2.3vw,2rem); }
 .recognition-feature p { color: var(--muted); margin: 0; }
 .recognition-feature .eyebrow { color: var(--terracotta); margin: 0 0 10px; }
+.event-moments { margin-top: 68px; }
+.event-moments-heading { max-width: 680px; margin: 0 auto 30px; text-align: center; }
+.event-moments-heading h2 { margin: 0 0 12px; }
+.event-moments-heading p { color: var(--muted); margin: 0; }
+.event-moments-heading .eyebrow { color: var(--terracotta); margin-bottom: 10px; }
+.event-moments-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+.event-moments-grid figure {
+  position: relative;
+  margin: 0;
+  min-height: 260px;
+  overflow: hidden;
+  border-radius: 14px;
+  background: var(--sage);
+}
+.event-moments-grid img { width: 100%; height: 100%; object-fit: cover; transition: transform .25s ease; }
+.event-moments-grid figure:hover img { transform: scale(1.03); }
+.event-moments-grid figcaption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 22px 14px 13px;
+  color: var(--white);
+  font-size: .84rem;
+  font-weight: 600;
+  background: linear-gradient(transparent, rgba(17, 34, 29, .86));
+}
 .credit-image, .award-image { background: var(--sand); }
 .credit-image img, .award-image img { object-fit: cover; }
 .credit-content h3, .award-content h3 { color: var(--forest); }
@@ -480,6 +511,7 @@ footer {
   .featured-recognition { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .guidance-promo-grid { grid-template-columns: 1fr; max-width: 520px; }
   .recognition-feature { max-width: 620px; }
+  .event-moments-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 @media (max-width: 620px) {
   .container { padding-left: 20px; padding-right: 20px; }
@@ -506,6 +538,9 @@ footer {
   .recognition-feature { grid-template-columns: 1fr; }
   .recognition-feature img { min-height: 0; max-height: 500px; }
   .recognition-feature figcaption { padding: 28px; }
+  .event-moments { margin-top: 50px; }
+  .event-moments-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .event-moments-grid figure { min-height: 210px; }
   .home-service-card { min-height: 0; }
   .hero-actions { flex-direction: column; align-items: stretch; }
   .hero-actions .btn { text-align: center; }
